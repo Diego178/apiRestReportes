@@ -30,7 +30,7 @@ def on_message(client, userdata, message):
         print("mensaje:", mensaje)
         print("fecha:", fecha)
         # Puedes realizar otras operaciones con los valores extraídos
-        url = 'http://127.0.0.1:8000/reportes/post/'
+        url = 'http://ip172-18-0-48-chsf5c0gftqg00c3ldag-8000.direct.labs.play-with-docker.com:8000/reportes/post/'
         reporte = {
             'esp32': esp32,
             'mensaje': mensaje,
@@ -53,8 +53,8 @@ def on_message(client, userdata, message):
 
 
 
-broker_hostname ="localhost"
-port = 1883 
+broker_hostname ="ip172-18-0-9-chsf5c0gftqg00c3ldag-1883.direct.labs.play-with-docker.com"
+port = 1883
 
 client = mqtt.Client("Client2")
 # client.username_pw_set(username="user_name", password="password") # uncomment if you use password auth
