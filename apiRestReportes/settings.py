@@ -8,7 +8,7 @@ environ.Env.read_env()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-1=#x51c0dbnsud7!9fhs1&bbd&0bu$@-jy7mnyhp&_)855tbk7'
 
 DEBUG = os.environ.get('DEBUG')
 
@@ -65,10 +65,11 @@ WSGI_APPLICATION = 'apiRestReportes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'PORT': os.environ.get('DB_PORT'),
+        'NAME': 'directorioemergencias',
+        'USER': 'yo',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
